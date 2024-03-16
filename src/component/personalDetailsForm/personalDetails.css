@@ -1,0 +1,77 @@
+.personalDetailForm{
+    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.formComponents{
+    padding: 2% 3%;
+    text-align: left;
+}
+
+.form-control:focus {
+    border-color: #5927E5;
+    box-shadow: 0 0 0 0.2rem rgba(89, 39, 229, 0.25);
+}
+
+.form-label{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.imageDisplay{
+    display: flex;
+    
+}
+
+.displayImage{
+    width: 120px;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #5927E5;
+    background-color:  rgba(89, 39, 229, 0.25);
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.inputImage{
+    align-items: right;
+    margin-left: 50px;
+    width: 60%;
+}
+
+.form-group {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.form-label {
+    margin-right: 10px; /* Adjust spacing between label and div */
+}
+
+.form-text{
+    display: flex; 
+}
+
+
+.radioInput{
+    display: flex; 
+}
+
+.form-check-label{
+    margin-right: 20px;
+
+}
+
+.saveBtn{
+    background-color: #5927E5;
+    color: white;
+    font-weight: 600;
+}
+
+.saveBtn:hover{
+    background-color: white;
+    color: #5927E5;
+    border: 2px solid #5927E5;
+}
