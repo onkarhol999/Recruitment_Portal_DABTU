@@ -1,28 +1,20 @@
-.educationalDetailForm{
+.AchievementForm{
     text-align: center;
     justify-content: center;
     margin: 20px 15px;
     border-radius: 15px;
+    border: 1px solid black;
     background-color: #eee8fc;
 }
 
-.form{
+.form-label{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.formComponents{
     padding: 2% 3%;
-    text-align: center;
-}
-
-.row{
     text-align: left;
-}
-
-.passingYearMonthDiv{
-
-    display: flex;
-}
-
-.passingYNM{
-    width: 25%;
-    margin-right: 25px;
 }
 
 #tabName{
@@ -34,8 +26,17 @@
     font-weight: 1000;
 }
 
-.From{
-    margin: 5px 0px;
-    border: 1px solid black;
-    border-radius: 5px;
+.saveBtn{
+    background-color: #5927E5;
+    color: white;
+    font-weight: 600;
 }
+
+
+
+.saveBtn:hover{
+    background-color: white;
+    color: #5927E5;
+    border: 2px solid #5927E5;
+}
+

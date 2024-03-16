@@ -7,7 +7,7 @@ function EducationalDetails() {
      <TimeLine/>
         <div className='educationalDetailForm'>
             <div className="From">
-                <h3>SSC</h3>
+                <h3 id='tabName'>SSC</h3>
                 <form className='form'>
                     <div className="row">
                         <div className="col-md-6">
@@ -49,7 +49,7 @@ function EducationalDetails() {
                 </form>
             </div>
             <div className="From">
-                <h3>HSC</h3>
+                <h3 id='tabName'>HSC</h3>
                 <form className='form'>
                     <div className="row">
                         <div className="col-md-6">
@@ -91,7 +91,7 @@ function EducationalDetails() {
                 </form>
             </div>
             <div className="From">
-                <h3>Graduate</h3>
+                <h3 id='tabName'>Graduate</h3>
                 <form className='form'>
                     <div className="row">
                         <div className="col-md-6">
@@ -133,7 +133,7 @@ function EducationalDetails() {
                 </form>
             </div>
             <div className="From">
-                <h3>Post Graduate</h3>
+                <h3 id='tabName'>Post Graduate</h3>
                 <form className='form'>
                     <div className="row">
                         <div className="col-md-6">
@@ -175,7 +175,7 @@ function EducationalDetails() {
                 </form>
             </div>
             <div className="From">
-                <h3>PHD</h3>
+                <h3 id='tabName'>PHD</h3>
                 <form className='form'>
                     <div className="row">
                         <div className="col-md-6">

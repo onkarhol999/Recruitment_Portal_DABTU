@@ -1,4 +1,4 @@
-.educationalDetailForm{
+.experienceDetailForm{
     text-align: center;
     justify-content: center;
     margin: 20px 15px;
@@ -15,12 +15,12 @@
     text-align: left;
 }
 
-.passingYearMonthDiv{
+.FTDateDiv{
 
     display: flex;
 }
 
-.passingYNM{
+.FTDate{
     width: 25%;
     margin-right: 25px;
 }
