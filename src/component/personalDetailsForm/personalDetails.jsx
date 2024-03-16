@@ -1,5 +1,5 @@
 import React from 'react' //eslint-disable-line no-unused-vars
-import './PersonalDetails.css';
+import './personalDetails.css';
 import user from '../Images/TimeLine/user.png';
 
 function PersonalDetails() {
