@@ -1,0 +1,19 @@
+#footerContainer{
+    background-color: #dcd1fa;
+}
+
+.container{
+    background-color: #dcd1fa;
+    text-align: center;
+    justify-content: center;
+}
+
+.footerLinks{
+    text-decoration: none;
+    color: black;
+}
+
+.footerLinks:hover{
+    text-decoration: underline;
+    color: #5927E5;
+}
