@@ -9,42 +9,35 @@ const TimeLine = () => {
   return (
     <div className="timeline-container">
       <div className="timeline-item">
-      <div className="timeline-item-header">
-            <h3>Personal Details</h3>
-          </div>
+        <div className="timeline-item-header">
+          <h3>Personal Details</h3>
+        </div>
         <div className="timeline-item-content">
-        
-          <img src = {user} />
-          
+          <img src={user} alt="User Icon" />
         </div>
       </div>
       <div className="timeline-item">
-      <div className="timeline-item-header">
-            <h3>Education Details</h3>
-          </div>
+        <div className="timeline-item-header">
+          <h3>Education Details</h3>
+        </div>
         <div className="timeline-item-content">
-        
-           <img src={education} alt="Education Icon" />
+          <img src={education} alt="Education Icon" />
         </div>
       </div>
       <div className="timeline-item">
-       <div className="timeline-item-header">
-            <h3>Experience</h3>
-          </div>
+        <div className="timeline-item-header">
+          <h3>Experience</h3>
+        </div>
         <div className="timeline-item-content">
-      
           <img src={experience} alt="Experience Icon" />
-          
         </div>
       </div>
       <div className="timeline-item">
-      <div className="timeline-item-header">
-            <h3>Achievements</h3>
-          </div>
+        <div className="timeline-item-header">
+          <h3>Achievements</h3>
+        </div>
         <div className="timeline-item-content">
-        
           <img src={achivement} alt="Achievements Icon" />
-          
         </div>
       </div>
     </div>

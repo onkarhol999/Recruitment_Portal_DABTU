@@ -1,72 +1,67 @@
-/* Basic styles */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Faint green background */
-  }
-  
-  .timeline-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin-left: 120px;
-    padding: 2rem 0;
-    position: relative;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Faint green background */
+}
 
-  }
-  
-  .timeline-item {
-    flex: 1;
-    position: relative;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-  }
-  
-  .timeline-item:after {
-    content: "";
-    display: block;
-    width: calc(100% - 77.5px); /* Adjusted width to end before the "Achievements" section */
-    height: 12px; /* Set height to create a horizontal line */
-    background-color: #0074d9; /* Blue line */
-    position: absolute;
-    left: 20.5%; /* Start from the middle of the "Personal Details" circle */
-    transform: translateX(-20%);
-    top: 59%; /* Adjust top position */
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-  
-  .timeline-item:last-child:after {
-    display: none; /* Hide the blue line after the last timeline item */
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .timeline-item-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(115, 247, 108);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
-  
-  .timeline-item-content img {
-    width: 50%; /* Adjust icon size */
-    height: 50%; /* Adjust icon size */
-    border-radius: 50%;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem; /* Adjust spacing between icon and text */
-  }
-  
-  .timeline-item-header h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0; /* Reset margin */
-    align-items: center;
-    justify-content: center;
-  }
-  
+.timeline-container {
+  display: flex;
+  flex-direction: row; /* Changed to row for side-by-side display */
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 10%; /* Adjusted margin for responsiveness */
+  padding: 2rem 0;
+  position: relative;
+}
+
+.timeline-item {
+  flex: 1;
+  position: relative;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.timeline-item:after {
+  content: "";
+  display: block;
+  width: calc(380px - 95px); /* Adjusted width for the blue line */
+  height: 10px; /* Adjusted height for the blue line */
+  background-color: #0074d9; /* Blue line */
+  position: absolute;
+  left: 25%; /* Start from the middle */
+  transform: translateX(-50%);
+  top: 58%; /* Adjust top position */
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.timeline-item:last-child:after {
+  display: none; /* Hide the blue line after the last timeline item */
+}
+
+.timeline-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(115, 247, 108);
+  width: 6em; /* Adjusted width for the circle */
+  height: 6em; /* Adjusted height for the circle */
+  border-radius: 50%;
+}
+
+.timeline-item-content img {
+  width: 50%; /* Adjusted icon size */
+  height: 50%; /* Adjusted icon size */
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem; /* Adjust spacing between icon and text */
+}
+
+.timeline-item-header h3 {
+  font-size: 1.2em; /* Adjusted font size */
+  font-weight: bold;
+  margin: 0; /* Reset margin */
+  align-items: center;
+  justify-content: center;
+}

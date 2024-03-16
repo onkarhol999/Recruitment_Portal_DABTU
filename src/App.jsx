@@ -1,23 +1,19 @@
-import './App.css';
-import EducationalDetails from './component/EducationalDetailsForm/EducationalDetails';
+import React from 'react' // eslint-disable-line no-unused-vars
 import Footer from './component/headerFooter/Footer';
 import Header from './component/headerFooter/Header';
-// import PersonalDetails from './component/personalDetailsForm/personalDetails';
-// import TimeLine from './component/timeLine/TimeLine';
-// import Home from './component/home/Home';
+import TimeLine from './component/timeLine/TimeLine';
+import PersonalDetails from './component/personalDetailsForm/personalDetails';
 
 
 function App() {
   return (
     <>
       <Header/>
-      {/* <TimeLine/>
-      <Home/> */}
-      {/* <PersonalDetails/> */}
-      <EducationalDetails/>
+      <TimeLine/>
+      <PersonalDetails/>
       <Footer/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
