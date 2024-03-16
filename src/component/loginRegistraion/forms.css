@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
+
+.container{
+    max-width: 500px;
+}
+
+.inputs{
+    text-align: left;
+}
+
+#labels{
+    font-weight: 500;
+}
+
+.form-control:focus {
+    border-color: #5927E5;
+    box-shadow: 0 0 0 0.2rem rgba(89, 39, 229, 0.25);
+} 
+
+.form-check-input:focus{
+    border-color: #5927E5;
+    box-shadow: 0 0 0 0.2rem rgba(89, 39, 229, 0.25);
+}
+
+.form-check{
+    text-align: left;
+}
+
+#forgotPassword{
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#Btn{
+    font-weight: 700;
+    width: 10rem;
+    background-color: #5927E5;
+    color: #FEF6FF;
+}
+
+#Btn:hover{
+    background-color: #FEF6FF;
+    color: #5927E5;
+    border: 1px solid #5927E5
+}
+
+.registerLink{
+    font-weight: 500;
+}
