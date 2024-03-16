@@ -1,9 +1,12 @@
+.footerContainer{
+    background-color: #dcd1fa;
+}
+
 #footerContainer{
     background-color: #dcd1fa;
 }
 
 .container{
-    background-color: #dcd1fa;
     text-align: center;
     justify-content: center;
 }
