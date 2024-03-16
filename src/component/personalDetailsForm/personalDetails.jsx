@@ -1,7 +1,7 @@
 import React from 'react' //eslint-disable-line no-unused-vars
 import './personalDetails.css';
 
-function personalDetails() {
+function PersonalDetails() {
   return (
     <>
     <form className='personalDetailForm'>
@@ -145,4 +145,4 @@ function personalDetails() {
   )
 }
 
-export default personalDetails
+export default PersonalDetails
