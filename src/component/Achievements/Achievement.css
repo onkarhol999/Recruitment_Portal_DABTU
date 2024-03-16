@@ -1,0 +1,42 @@
+.AchievementForm{
+    text-align: center;
+    justify-content: center;
+    margin: 20px 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #eee8fc;
+}
+
+.form-label{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.formComponents{
+    padding: 2% 3%;
+    text-align: left;
+}
+
+#tabName{
+    display: inline-block;
+    padding: 0% 5%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f7f4ff;
+    font-weight: 1000;
+}
+
+.saveBtn{
+    background-color: #5927E5;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+.saveBtn:hover{
+    background-color: white;
+    color: #5927E5;
+    border: 2px solid #5927E5;
+}
+
