@@ -10,17 +10,17 @@
 .col1{
   border-radius: 10px;
   margin: 10px;
-  background-color: #f080ff;
+  background-color: #dcd1fa;
 }
 .col2{
   border-radius: 10px;
   margin: 10px;
-  background-color: #f080ff;
+  background-color: #dcd1fa;
 }
 .col3{
   border-radius: 10px;
   margin: 10px;
-  background-color: #f080ff;
+  background-color: #dcd1fa;
 }
 .department-link {
   text-decoration: none;
@@ -55,6 +55,7 @@
 .custom-title {
   font-size: 1.875rem;
   font-weight: bold;
+  color: #374151;
 }
 
 .custom-text {
@@ -68,13 +69,15 @@
 .btn-primary{
   width: 300px;
   margin-bottom: 10px;
-  background-color: #9f0db3;
+  background-color:  #4d4dff;
   border-radius: 10px;
-  border: none;
+  border: 2px solid #000000;
 }
 
 .btn-primary:hover {
-  background-color:  #7c008c;
+  background-color:  #dcd1fa;
+color: #000000;
+border: 2px solid #000000;
 }
 
 
@@ -82,21 +85,25 @@
   border-radius: 0.5rem;
   padding: 2rem;
   overflow: hidden;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 
-.custom-bg {
-  background-color: #f8f9fa;
-}
 
 .custom-title {
   font-size: 2rem;
   font-weight: bold;
-  color: #343a40;
+  color: #374151;
 }
 
 .custom-list {
-  list-style: none;
-  padding-left: 0;
+  padding-left: 2px;
+  margin-top: 20px;
+  justify-items: left;
+  text-align: left;
+}
+.custom-list a{
+  text-decoration: none;
+}
+.Explore{
+
 }
