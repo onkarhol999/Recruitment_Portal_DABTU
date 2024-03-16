@@ -1,10 +1,12 @@
 import React from 'react' //eslint-disable-line no-unused-vars
-import './personalDetails.css';
+import './personalDetails.css'
 import user from '../Images/TimeLine/user.png';
+import TimeLine from '../timeLine/TimeLine'
 
-function PersonalDetails() {
+function personalDetails() {
   return (
     <>
+    <TimeLine/>
     <form className='personalDetailForm'>
         <div className="row formComponents">
             <div className="col-md-6">
@@ -142,4 +144,4 @@ function PersonalDetails() {
   )
 }
 
-export default PersonalDetails
+export default personalDetails
