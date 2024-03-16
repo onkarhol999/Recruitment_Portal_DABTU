@@ -28,15 +28,16 @@
 
 .department-card {
   background-color: white;
-  padding: 1rem;
+  padding: 4px;
   border-radius: 0.5rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  margin: 0.5rem;
+  margin: 10px;
   transition: background-color 0.3s ease;
 }
 
 .department-card:hover {
   background-color:  #dcd1fa;
+  border: 2px solid #000000;
 }
 
 .department-card p {
@@ -93,6 +94,8 @@ border: 2px solid #000000;
   font-size: 2rem;
   font-weight: bold;
   color: #374151;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .custom-list {
@@ -105,5 +108,8 @@ border: 2px solid #000000;
   text-decoration: none;
 }
 .Explore{
-
+  margin-top: 65px;
+}
+.col{
+  margin-top: 14px;
 }

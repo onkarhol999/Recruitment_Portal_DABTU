@@ -108,7 +108,7 @@ function Home() {
             <div className="rounded h-200px max-w-96 mr-4 ml-4 mt-4">
       <section className="transition duration-300 transform hover:scale-105 bg-blue-100 rounded-md p-8">
         <div className='bg-blue-300 w-full'>
-          <h1 className="text-3xl font-bold mb-4 p-6 text-center">Explore Our Departments</h1>
+          <h1 className="custom-title Explore">Explore Our Departments</h1>
         </div>
 
         {/* Department Links */}
