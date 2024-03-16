@@ -1,3 +1,5 @@
+/* Top section */
+
 .headerContainer{
     margin: 10px 2px;
     display: flex;
@@ -17,7 +19,7 @@
 .Title{
     display: inline-block;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     margin-top: 5px;
 }
 
@@ -30,3 +32,39 @@
         display: block;
     }
   }
+
+
+.clgName{
+    font-size: 1.3rem;
+    font-style: bold;
+    font-weight: 1000;
+}
+
+.clgSiteTitle{
+    font-size: 1.3rem;
+    font-size: bold;
+    font-weight: 600;
+}
+
+
+
+/* Navbar section css */
+
+.navbar{
+    background-color: #dcd1fa;
+}
+
+.navBtn{
+    font-weight: 500;
+
+    margin: 2px 5px;
+    border-radius:5px ;
+}
+
+.navBtn:hover{
+    color: rgb(255, 0, 0);
+}
+
+.navBtn:focus{
+    text-decoration: underline;
+}
