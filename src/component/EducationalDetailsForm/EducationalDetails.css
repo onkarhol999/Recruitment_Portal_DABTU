@@ -1,0 +1,23 @@
+.educationalDetailForm{
+    text-align: center;
+    justify-content: center;
+    margin: 20px 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #eee8fc;
+}
+
+.form{
+    padding: 2% 3%;
+    text-align: left;
+}
+
+.passingYearMonthDiv{
+
+    display: flex;
+}
+
+.passingYNM{
+    width: 25%;
+    margin-right: 25px;
+}

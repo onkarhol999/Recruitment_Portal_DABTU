@@ -1,5 +1,6 @@
 import React from 'react' //eslint-disable-line no-unused-vars
 import './personalDetails.css';
+import user from '../Images/TimeLine/user.png';
 
 function personalDetails() {
   return (
@@ -9,7 +10,7 @@ function personalDetails() {
             <div className="col-md-6">
                 <div className="mb-3 imageDisplay">
                     <div className="displayImage">
-                        your Image will be displayed here    
+                        <img src={user} id='userImg' />    
                     </div>
                     <div className="inputImage">
                         <label className="form-label" htmlFor="customFile">Upload Your Photo</label>
@@ -137,10 +138,6 @@ function personalDetails() {
         </div>
         <button type="submit" className="btn btn-primary saveBtn">Save and Next</button>
     </form>
-    
-    
-    
-    
     </>
   )
 }
