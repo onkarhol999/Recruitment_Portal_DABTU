@@ -1,6 +1,9 @@
 import React from 'react';
 import './TimeLine.css';
-import user from '../Images/user.png'
+import user from '../Images/TimeLine/user.png'
+import achivement from '../Images/TimeLine/achivements.png'
+import education from '../Images/TimeLine/education.png'
+import experience from '../Images/TimeLine/experience.png'
 
 const TimeLine = () => {
   return (
@@ -21,7 +24,7 @@ const TimeLine = () => {
           </div>
         <div className="timeline-item-content">
         
-           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN0amZ6JYcXM__iA-qeenidfFtXyfeIPaZMw&s" alt="Education Icon" />
+           <img src={education} alt="Education Icon" />
         </div>
       </div>
       <div className="timeline-item">
@@ -30,7 +33,7 @@ const TimeLine = () => {
           </div>
         <div className="timeline-item-content">
       
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN0amZ6JYcXM__iA-qeenidfFtXyfeIPaZMw&s" alt="Experience Icon" />
+          <img src={experience} alt="Experience Icon" />
           
         </div>
       </div>
@@ -40,7 +43,7 @@ const TimeLine = () => {
           </div>
         <div className="timeline-item-content">
         
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN0amZ6JYcXM__iA-qeenidfFtXyfeIPaZMw&s" alt="Achievements Icon" />
+          <img src={achivement} alt="Achievements Icon" />
           
         </div>
       </div>

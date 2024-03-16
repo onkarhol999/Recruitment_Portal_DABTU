@@ -27,13 +27,13 @@ body {
   .timeline-item:after {
     content: "";
     display: block;
-    width: calc(100% - 100px); /* Adjusted width to end before the "Achievements" section */
+    width: calc(100% - 77.5px); /* Adjusted width to end before the "Achievements" section */
     height: 12px; /* Set height to create a horizontal line */
     background-color: #0074d9; /* Blue line */
     position: absolute;
-    left: 26%; /* Start from the middle of the "Personal Details" circle */
-    transform: translateX(-10%);
-    top: 56%; /* Adjust top position */
+    left: 20.5%; /* Start from the middle of the "Personal Details" circle */
+    transform: translateX(-20%);
+    top: 59%; /* Adjust top position */
     transform: translateY(-50%);
     z-index: 1;
   }
@@ -59,7 +59,7 @@ body {
     height: 50%; /* Adjust icon size */
     border-radius: 50%;
     margin-bottom: 0.5rem;
-    margin-top: 0.5rem; /* Adjust spacing between icon and text */
+    margin-top: 1rem; /* Adjust spacing between icon and text */
   }
   
   .timeline-item-header h3 {
