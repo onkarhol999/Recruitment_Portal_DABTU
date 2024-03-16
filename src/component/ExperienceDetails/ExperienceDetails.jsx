@@ -1,9 +1,11 @@
 import React from 'react' //eslint-disable-line no-unused-vars
 import './ExperienceDetails.css';
+import TimeLine from '../timeLine/TimeLine';
 
 function ExperienceDetails() {
   return (
     <>
+    <TimeLine/>
         <div className='experienceDetailForm'>
             <div className="From">
                 <h3 id='tabName'>Teaching Experience</h3>

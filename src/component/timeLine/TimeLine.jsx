@@ -30,20 +30,25 @@ const TimeLine = () => {
         </NavLink>
       </div>
       <div className="timeline-item">
+        <NavLink to="/experience">
         <div className="timeline-item-header">
           <h3>Experience</h3>
         </div>
         <div className="timeline-item-content">
           <img src={experience} alt="Experience Icon" />
         </div>
+        </NavLink>
+        
       </div>
       <div className="timeline-item">
+        <NavLink to="/achievement">
         <div className="timeline-item-header">
           <h3>Achievements</h3>
         </div>
         <div className="timeline-item-content">
           <img src={achivement} alt="Achievements Icon" />
         </div>
+        </NavLink>
       </div>
     </div>
   );
