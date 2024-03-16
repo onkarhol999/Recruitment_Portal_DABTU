@@ -1,4 +1,25 @@
-.DBATUlogo{
-    width: 10px;
-    height: 10px;
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.topcontainer{
+    justify-content: center;    
+    text-align: center; 
+}
+.dbatuLogo{
+    width: 100px;
+    display: inline-block;
+}
+
+.Title{
+    display: inline-block;
+    justify-content: center;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.Title p{
+    margin-bottom: 2px;
 }
