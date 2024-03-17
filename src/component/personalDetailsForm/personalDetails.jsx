@@ -1,9 +1,9 @@
 import React from 'react' //eslint-disable-line no-unused-vars
-import './personalDetails.css'
+import './PersonalDetails.css'
 import user from '../Images/TimeLine/user.png';
 import TimeLine from '../timeLine/TimeLine'
 
-function personalDetails() {
+function PersonalDetails() {
   return (
     <>
     <TimeLine/>
@@ -144,4 +144,4 @@ function personalDetails() {
   )
 }
 
-export default personalDetails
+export default PersonalDetails
