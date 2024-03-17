@@ -1,10 +1,12 @@
 import React from 'react'
 import './Home.css'
+import { NavLink } from 'react-router-dom'
+// import PersonalDetails from '../personalDetailsForm/PersonalDetails'
 
 function Home() {
   return (
     <>     
-    
+    {/* <PersonalDetails/> */}
     {/* Section one */}
         <div className="container-md-12">
         <div className="row">
@@ -98,9 +100,11 @@ function Home() {
             </p>
           </div>
         </section>
+        <NavLink to="/profile">
         <button className="btn btn-primary btn-lg mt-4" onClick={() => {}}>
           Apply Now
         </button>
+        </NavLink>
       </div>
       </div>
     {/* Section */}

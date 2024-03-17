@@ -1,9 +1,11 @@
 import React from 'react'  // eslint-disable-line no-unused-vars
 import './Achievement.css';
+import TimeLine from '../timeLine/TimeLine';
 
 function Achievement() {
   return (
     <>
+     <TimeLine/>
         <form className='AchievementForm'>
             <h3 id='tabName'>Your Research Papers</h3>
             <div className="formComponents">

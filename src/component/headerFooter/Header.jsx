@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'
+import {NavLink} from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -29,10 +30,14 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link navBtn" aria-current="page" href="#">Home</a>
+                <NavLink to={"/"} className="nav-link navBtn">
+                           Home
+              </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link navBtn" href="#">Profile</a>
+                 <NavLink to="/profile" className="nav-link navBtn"> 
+                     Profile
+                </NavLink> 
               </li>
               <li className="nav-item">
                 <a className="nav-link navBtn" href="#">Job Application</a>
