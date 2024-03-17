@@ -1,3 +1,4 @@
+/* Original CSS */
 body {
   font-family: sans-serif;
   margin: 0;
@@ -64,4 +65,50 @@ body {
   margin: 0; /* Reset margin */
   align-items: center;
   justify-content: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .timeline-container {
+      display: grid; /* Switch to grid layout on smaller screens */
+      /* grid-template-columns: 1fr; Display one column on smaller screens */
+      gap: -5%; /* Adjust the gap between items */
+      align-items: center; /* Center the items vertically */
+      height: auto; /* Reset height */
+      width: 300px;
+    }
+
+  .timeline-item {
+    margin-left: 0; /* Reset margin for smaller screens */
+    width: 1000px;
+    height: 40px;
+    margin-top: 0px;
+  }
+  .timeline-item:after {
+    display: none; /* Hide the blue line on smaller screens */
+  }
+  .timeline-item-header{
+    margin-top: 2%;
+    margin-right: 3%;
+  }
+.time-lineitem-flex {
+   display: flex;
+   margin-top: -3%;
+}
+  .timeline-item-content {
+    width: 60px; /* Adjusted width for smaller screens */
+    height: 60px; /* Adjusted height for smaller screens */
+  }
+ #p4{
+    margin-right: 60px;
+  }
+  #p3{
+    margin-right: 85px;
+  }
+  #p2{
+    margin-right: 30px;
+  }
+  #p1{
+    margin-right: 40px;
+  }
 }
