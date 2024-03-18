@@ -56,7 +56,6 @@
 
 .navBtn{
     font-weight: 500;
-
     margin: 2px 5px;
     border-radius:5px ;
 }
@@ -67,4 +66,13 @@
 
 .navBtn:focus{
     text-decoration: underline;
+}
+
+.userImg{
+    height: 20px;
+    margin-top: 9%;
+    margin-right: 20px;
+}
+.userImgFlex{
+    display: flex;
 }

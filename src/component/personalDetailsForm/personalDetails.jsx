@@ -2,7 +2,7 @@ import React from 'react' //eslint-disable-line no-unused-vars
 import './personalDetails.css'
 import user from '../Images/TimeLine/user.png';
 import TimeLine from '../timeLine/TimeLine'
-
+import { NavLink } from 'react-router-dom';
 function personalDetails() {
   return (
     <>
@@ -137,9 +137,12 @@ function personalDetails() {
                     <input type="file" className="form-control" id="casteCertificate" />
                 </div>
             </div>
-        </div>
-        <button type="submit" className="btn btn-primary saveBtn">Save and Next</button>
+        </div>    
+        <NavLink to="/education">
+           <button type="submit" className="btn btn-primary saveBtn">Save and Next</button>    
+        </NavLink>
     </form>
+               
     </>
   )
 }

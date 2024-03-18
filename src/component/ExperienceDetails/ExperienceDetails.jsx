@@ -1,6 +1,7 @@
 import React from 'react' //eslint-disable-line no-unused-vars
 import './ExperienceDetails.css';
 import TimeLine from '../timeLine/TimeLine';
+import { NavLink } from 'react-router-dom';
 
 function ExperienceDetails() {
   return (
@@ -108,6 +109,9 @@ function ExperienceDetails() {
                 </form>
             </div>
         </div> 
+        <NavLink to="/achievement">
+           <button type="submit" className="btn btn-primary saveBtn1">Next</button>    
+        </NavLink>
     </>
   )
 }
