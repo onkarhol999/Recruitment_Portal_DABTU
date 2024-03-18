@@ -26,13 +26,22 @@
     font-weight: 1000;
 }
 
+.form-group{
+    justify-content: right;
+    padding: 15px;
+}
+
+.addBtn{
+    background-color: rgb(88, 194, 82);
+
+}
+
+
 .saveBtn{
     background-color: #5927E5;
     color: white;
     font-weight: 600;
 }
-
-
 
 .saveBtn:hover{
     background-color: white;
