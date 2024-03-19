@@ -25,6 +25,14 @@
     margin-right: 25px;
 }
 
+.inlineRow{
+    display: flex;
+}
+
+.inlineCol{
+    margin-right: 25px;
+}
+
 #tabName{
     display: inline-block;
     padding: 0% 5%;
