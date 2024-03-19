@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css'
 import {NavLink} from 'react-router-dom'
+import user from '../Images/TimeLine/user.png'
 
 const Header = () => {
   return (
@@ -49,8 +50,9 @@ const Header = () => {
             </ul>
             <div className="d-flex">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li className="nav-item userImgFlex">
                 <a className="nav-link navBtn" href="#">userName </a>
+                <img className='userImg' src={user} alt="" />
               </li>
             </ul>
             </div>

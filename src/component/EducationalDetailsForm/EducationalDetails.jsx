@@ -1,6 +1,7 @@
 import React, {useState} from 'react'  //eslint-disable-line no-unused-vars
 import './EducationalDetails.css';
 import TimeLine from '../timeLine/TimeLine';
+import { NavLink } from 'react-router-dom';
 function EducationalDetails() {
         const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
         const years = [];
@@ -407,8 +408,14 @@ function EducationalDetails() {
                             </div>
                         </div>
                     </div>
-                    <button type="submit" className="btn btn-primary saveBtn">Save</button>
+                    {/* <NavLink to="/experience"> */}
+                       <button type="submit" className="btn btn-primary saveBtn">Save</button>
+                   {/* </NavLink> */}
+                    
                 </form>
+                <NavLink to="/experience">
+                       <button type="submit" className="btn btn-primary saveBtn">Next</button>
+                   </NavLink>
             </div>
         
         </div> 
