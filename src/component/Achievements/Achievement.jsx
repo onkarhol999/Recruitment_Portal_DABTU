@@ -35,6 +35,15 @@ function Achievement() {
     console.log(researchPapers);
   };
 
+
+  // text area limit handling
+  const [summary, setSummary] = useState('');
+  
+  const handleChange = (event) => {
+    if (event.target.value.length <= 150) {
+      setSummary(event.target.value);
+    }
+  };
   return (
     <>
       <TimeLine />
@@ -63,6 +72,33 @@ function Achievement() {
         </div>
         <button type="submit" className="btn btn-primary saveBtn">Save and Submit</button>
       </form>
+      
+
+      <form className='AchievementForm'>
+      <div className="formComponents">
+        <label className='form-label' htmlFor="summary">Summary for the project you made (up to 150 characters):</label>
+        <textarea
+          className='form-control'
+          id="summary"
+          name="summary"
+          value={summary}
+          onChange={handleChange}
+          maxLength={150}
+          rows={4}
+          cols={50}
+        />
+        <p>Characters remaining: {150 - summary.length}</p>
+
+        <div className="mb-3">
+          <label htmlFor="projectLinks" className="form-label">Email address</label>
+          <input type="text" className="form-control" id="projectLink" placeholder="Link for the project"/>
+        </div>
+      </div>
+      <button type="submit" className="btn btn-primary saveBtn">Save and Add New</button>
+      </form>
+      <div className="saveBtnDiv">
+      <button type="submit" className="btn btn-primary saveBtn1">Submit Form</button>
+      </div>
     </>
   );
 }
