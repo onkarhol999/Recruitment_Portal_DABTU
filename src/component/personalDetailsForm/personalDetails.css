@@ -7,6 +7,13 @@
     background-color: #eee8fc;
 }
 
+@media screen and (min-width: 900px){
+    .personalDetailForm{
+        margin: 20px 200px;
+    }
+
+}
+
 .formComponents{
     padding: 2% 3%;
     text-align: left;

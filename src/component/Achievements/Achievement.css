@@ -8,6 +8,13 @@
     background-color: #eee8fc;
 }
 
+@media screen and (min-width: 900px){
+    .AchievementForm{
+        margin: 20px 200px;
+    }
+
+}
+
 .form-label{
     font-size: 1.2rem;
     font-weight: 700;

@@ -90,7 +90,7 @@ function Achievement() {
         <p>Characters remaining: {150 - summary.length}</p>
 
         <div className="mb-3">
-          <label htmlFor="projectLinks" className="form-label">Email address</label>
+          <label htmlFor="projectLinks" className="form-label">Link for the project</label>
           <input type="text" className="form-control" id="projectLink" placeholder="Link for the project"/>
         </div>
       </div>

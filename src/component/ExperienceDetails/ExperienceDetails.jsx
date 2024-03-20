@@ -45,16 +45,30 @@ function ExperienceDetails() {
                         </div>
                         <div className="col-md-6">
                             <div className="mb-3">
-                                <label htmlFor="InputAppointment" className="form-label">Nature of Appointment</label>
-                                <input type="text" className="form-control" id="inputNatureAppointment" placeholder='Enter Nature of appointment'/>
+                                <div className="mb-3 ">
+                                <label htmlFor="InputAppointment" className="form-label">Nature of Appointment</label><br />
+                                <div className="form-check">
+                                <input className="form-check-input " type="radio" name="NOA" id="flexRadioDefault1"/>
+                                <label className="form-check-label mx-2" htmlFor="flexRadioDefault1">
+                                    Permanent / Regular
+                                </label>
+                            </div>
+                            <div className="form-check">
+                                <input className="form-check-input" type="radio" name="NOA" id="flexRadioDefault2"/>
+                                <label className="form-check-label mx-2" htmlFor="flexRadioDefault2">
+                                    Contractual / Temperary
+                                </label>
+                            </div>
+                            </div>
                             </div>
                         </div>
                         <div className="col-md-6">
                             <div className="mb-3">
                                 <label className="form-label" htmlFor="customFile">Total Experience</label>
-                                <input type="text" className="form-control" id="TotalExp" placeholder='Enter your overall Experience'/>
+                                <input type="number" className="form-control" id="TotalExp" placeholder='number of years of Experience you have'/>
                             </div>
                         </div>
+                        <div className="col-md-6"></div>
                     </div>
                     <button type="submit" className="btn btn-primary saveBtn">Save and Add Next</button>
                 </form>
@@ -77,6 +91,7 @@ function ExperienceDetails() {
                                     <option value="Head">Head</option>
                                     <option value="Dean">Dean</option>
                                     <option value="Registrar">Registrar</option>
+                                    <option value="other">Other</option>
                                 </select>
                                 
                             </div>
@@ -93,17 +108,29 @@ function ExperienceDetails() {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="mb-3">
-                                <label htmlFor="InputAppointment" className="form-label">Nature of Appointment</label>
-                                <input type="text" className="form-control" id="inputNatureAppointment" placeholder='Enter Nature of appointment'/>
+                            <div className="mb-3 ">
+                                <label htmlFor="InputAppointment" className="form-label">Nature of Appointment</label><br />
+                                <div className="form-check">
+                                <input className="form-check-input " type="radio" name="NOA" id="flexRadioDefault1"/>
+                                <label className="form-check-label mx-2" htmlFor="flexRadioDefault1">
+                                    Permanent / Regular
+                                </label>
+                            </div>
+                            <div className="form-check">
+                                <input className="form-check-input" type="radio" name="NOA" id="flexRadioDefault2"/>
+                                <label className="form-check-label mx-2" htmlFor="flexRadioDefault2">
+                                    Contractual / Temperary
+                                </label>
+                            </div>
                             </div>
                         </div>
                         <div className="col-md-6">
                             <div className="mb-3">
                                 <label className="form-label" htmlFor="customFile">Total Experience</label>
-                                <input type="text" className="form-control" id="TotalExp" placeholder='Enter your overall Experience'/>
+                                <input type="number" className="form-control" id="TotalExp" placeholder='number of years of Experience you have'/>
                             </div>
                         </div>
+                        <div className="col-md-6"></div>
                     </div>
                     <button type="submit" className="btn btn-primary saveBtn">Save and Add Next</button>
                 </form>
