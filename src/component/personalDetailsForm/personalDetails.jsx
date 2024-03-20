@@ -1,14 +1,12 @@
 import React from 'react' //eslint-disable-line no-unused-vars
-import './PersonalDetails.css'
+import './personalDetails.css'
 import user from '../Images/TimeLine/user.png';
 import TimeLine from '../timeLine/TimeLine'
-<<<<<<< HEAD
+
 import { NavLink } from 'react-router-dom';
-function personalDetails() {
-=======
 
 function PersonalDetails() {
->>>>>>> a71e20929d76f477264673d66cb268c8ca4b6951
+    
   return (
     <>
     <TimeLine/>

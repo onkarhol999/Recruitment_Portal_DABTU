@@ -225,7 +225,7 @@ function EducationalDetails() {
                    {/* </NavLink> */}
                     
                 </form>
-                <NavLink to="/experience">
+                  <NavLink to="/experience">
                        <button type="submit" className="btn btn-primary saveBtn">Next</button>
                    </NavLink>
             </div>
