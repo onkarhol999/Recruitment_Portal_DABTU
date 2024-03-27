@@ -6,6 +6,13 @@
     background-color: #eee8fc;
 }
 
+@media screen and (min-width: 900px){
+    .experienceDetailForm{
+        margin: 20px 200px;
+    }
+
+}
+
 .form{
     padding: 2% 3%;
     text-align: center;

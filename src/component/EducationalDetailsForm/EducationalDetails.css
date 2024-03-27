@@ -5,6 +5,12 @@
     border-radius: 15px;
     background-color: #eee8fc;
 }
+@media screen and (min-width: 900px){
+    .educationalDetailForm{
+        margin: 20px 200px;
+    }
+
+}
 
 .form{
     padding: 2% 3%;
@@ -13,6 +19,10 @@
 
 .row{
     text-align: left;
+}
+
+.thesisInputs{
+    min-width: 350px;
 }
 
 .passingYearMonthDiv{
@@ -30,7 +40,7 @@
 }
 
 .inlineCol{
-    margin-right: 25px;
+    margin-right: 50px;
 }
 
 #tabName{

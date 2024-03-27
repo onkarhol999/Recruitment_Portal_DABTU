@@ -74,9 +74,20 @@ function PersonalDetails() {
                 </div>
             </div>
             <div className="col-md-6">
+                
+
+                
                 <div className="mb-3">
-                    <label htmlFor="InputNationality" className="form-label">Nationality</label>
-                    <input type="text" className="form-control" id="inputNationality" placeholder="Enter your Nationality" required/>
+                    <div className="inlineRow">
+                        <div className="inlineCol">
+                            <label htmlFor="InputNationality" className="form-label">Nationality</label>
+                            <input type="text" className="form-control" id="inputNationality" placeholder="Enter your Nationality" required/>
+                        </div>
+                        <div className="inlineCol">
+                            <label htmlFor="InputReligion" className="form-label">Religion</label>
+                            <input type="text" className="form-control inlineCol" id="inputReligion" placeholder="Enter your Religion" required/>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="col-md-6">
@@ -135,10 +146,13 @@ function PersonalDetails() {
                                 <option value="SC">SC</option>
                                 <option value="ST">ST</option>
                                 <option value="OBC">OBC</option>
-                                <option value="VJNT">VJ</option>
-                                <option value="VJNT">NT</option>
-                                <option value="SBC">GC</option>
-                                <option value="SBC">Other</option>
+                                <option value="VJNT">VJ(A)</option>
+                                <option value="NTB">NT-B</option>
+                                <option value="NTC">NT-C</option>
+                                <option value="NTD">NT-D</option>
+                                <option value="Open">OPEN</option>
+                                <option value="PH">PH</option>
+                                <option value="Ex-Serviceman">Ex-Serviceman</option>
                             </select>
                         </div>
                         <div className="col">
