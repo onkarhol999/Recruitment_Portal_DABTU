@@ -56,7 +56,7 @@ function ExperienceDetails() {
                             </div>
                         </div>
                     </div>
-                    <button type="submit" className="btn btn-primary saveBtn">Save</button>
+                    <button type="submit" className="btn btn-primary saveBtn">Save and Add Next</button>
                 </form>
             </div>
             <div className="From">
@@ -105,13 +105,15 @@ function ExperienceDetails() {
                             </div>
                         </div>
                     </div>
-                    <button type="submit" className="btn btn-primary saveBtn">Save</button>
+                    <button type="submit" className="btn btn-primary saveBtn">Save and Add Next</button>
                 </form>
             </div>
         </div> 
-        <NavLink to="/achievement">
-           <button type="submit" className="btn btn-primary saveBtn1">Next</button>    
-        </NavLink>
+            <div className="saveBtnDiv">
+                <NavLink to="/achievement">
+                <button type="submit" className="btn btn-primary saveBtn1">Submit and Next</button>    
+                </NavLink>
+            </div>
     </>
   )
 }
