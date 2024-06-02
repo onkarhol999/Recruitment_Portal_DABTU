@@ -1,0 +1,50 @@
+.register-container {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+  text-align: center;
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container form div {
+  margin-bottom: 15px;
+}
+
+.register-container form label {
+  margin-bottom: 5px;
+}
+
+.register-container form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-container form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-container form button:hover {
+  background-color: #218838;
+}
+
+.register-container p {
+  text-align: center;
+  color: red;
+}

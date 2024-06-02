@@ -43,10 +43,11 @@ const Header = () => {
               <li className="nav-item">
                 <a className="nav-link navBtn" href="#">Job Application</a>
               </li>
-
+              <NavLink to="/userDetails">
               <li className="nav-item">
                 <a className="nav-link navBtn" href="#">My Applied Post</a>
               </li>
+              </NavLink>
             </ul>
             <div className="d-flex">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
