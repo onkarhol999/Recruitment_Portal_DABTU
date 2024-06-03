@@ -4,7 +4,7 @@ import axios from 'axios';
 const UserDetails = () => {
   const [userData, setUserData] = useState({
     personalDetails: {},
-    educationDetails: {},
+    educationDetails: [],
     achievements: {},
     teachingExperience: [],
     administrativeExperience: []
@@ -49,14 +49,31 @@ const UserDetails = () => {
         <p>Full Name: {userData.personalDetails?.fullName || 'N/A'}</p>
         <p>Email: {userData.personalDetails?.email || 'N/A'}</p>
         <p>Mobile Number: {userData.personalDetails?.mobileNumber || 'N/A'}</p>
-        {/* Add more personal details as needed */}
+        <p>Current Address: {userData.personalDetails?.currentAddress || 'N/A'}</p>
+        <p>Adhar Card Number: {userData.personalDetails?.adharCardNumber || 'N/A'}</p>
+        <p>DOB: {new Date(userData.personalDetails?.dob).toLocaleDateString() || 'N/A'}</p>
+        <p>Age: {userData.personalDetails?.age || 'N/A'}</p>
+        <p>Nationality: {userData.personalDetails?.nationality || 'N/A'}</p>
+        <p>Religion: {userData.personalDetails?.religion || 'N/A'}</p>
+        <p>Gender: {userData.personalDetails?.gender || 'N/A'}</p>
+        <p>Marital Status: {userData.personalDetails?.maritalStatus || 'N/A'}</p>
+        <p>Category: {userData.personalDetails?.category || 'N/A'}</p>
       </section>
       <section>
         <h2>Education Details</h2>
-        <p>Highest Qualification: {userData.educationDetails?.highestQualification || 'N/A'}</p>
-        <p>University: {userData.educationDetails?.university || 'N/A'}</p>
-        <p>Year of Passing: {userData.educationDetails?.yearOfPassing || 'N/A'}</p>
-        {/* Add more education details as needed */}
+        {userData.educationDetails.length > 0 ? (
+          userData.educationDetails.map((edu, index) => (
+            <div key={index}>
+              <p>Highest Qualification: {edu.highestQualification}</p>
+              <p>University: {edu.university}</p>
+              <p>Year of Passing: {edu.yearOfPassing}</p>
+              <p>Percentage: {edu.percentage}</p>
+              <p>Additional Courses: {edu.additionalCourses}</p>
+            </div>
+          ))
+        ) : (
+          <p>No education details available</p>
+        )}
       </section>
       <section>
         <h2>Achievements</h2>
@@ -77,7 +94,8 @@ const UserDetails = () => {
               <p>Position: {exp.position}</p>
               <p>From: {new Date(exp.fromDate).toLocaleDateString()}</p>
               <p>To: {new Date(exp.toDate).toLocaleDateString()}</p>
-              {/* Add more teaching experience details as needed */}
+              <p>Nature of Appointment: {exp.natureOfAppointment}</p>
+              <p>Total Experience: {exp.totalExperience} years</p>
             </div>
           ))
         ) : (
@@ -93,7 +111,8 @@ const UserDetails = () => {
               <p>Position: {exp.position}</p>
               <p>From: {new Date(exp.fromDate).toLocaleDateString()}</p>
               <p>To: {new Date(exp.toDate).toLocaleDateString()}</p>
-              {/* Add more administrative experience details as needed */}
+              <p>Nature of Appointment: {exp.natureOfAppointment}</p>
+              <p>Total Experience: {exp.totalExperience} years</p>
             </div>
           ))
         ) : (

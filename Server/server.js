@@ -44,7 +44,7 @@ const educationDetailsSchema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
   highestQualification: String,
   university: String,
-  yearOfPassing: Number,
+  yearOfPassing: String,
   percentage: Number,
   additionalCourses: String
 });
@@ -174,7 +174,9 @@ app.post('/savePersonalDetails', verifyToken, async (req, res) => {
 });
 
 // Routes for saving education details
-app.post('/saveEducationDetails', verifyToken, async (req, res) => {
+
+// Route for saving SSC education details
+app.post('/saveSSCEducationDetails', verifyToken, async (req, res) => {
   const {
     highestQualification, university, yearOfPassing, percentage, additionalCourses
   } = req.body;
@@ -190,9 +192,109 @@ app.post('/saveEducationDetails', verifyToken, async (req, res) => {
 
   try {
     await newEducationDetails.save();
-    res.status(200).send({ message: 'Education details saved successfully' });
+    res.status(200).send('SSC education details saved successfully');
   } catch (err) {
-    console.error('Error saving education details:', err);
+    console.error('Error saving SSC education details:', err);
+    res.status(500).send('Server Error');
+  }
+});
+
+// Route for saving HSC education details
+app.post('/saveHSCEducationDetails', verifyToken, async (req, res) => {
+  // Similar logic as above
+  const {
+    highestQualification, university, yearOfPassing, percentage, additionalCourses
+  } = req.body;
+
+  const newEducationDetails = new EducationDetails({
+    userId: req.user.userId,
+    highestQualification,
+    university,
+    yearOfPassing,
+    percentage,
+    additionalCourses
+  });
+
+  try {
+    await newEducationDetails.save();
+    res.status(200).send('HSC education details saved successfully');
+  } catch (err) {
+    console.error('Error saving HSC education details:', err);
+    res.status(500).send('Server Error');
+  }
+});
+
+// Route for saving Graduation education details
+app.post('/saveGraduationEducationDetails', verifyToken, async (req, res) => {
+  // Similar logic as above
+  const {
+    highestQualification, university, yearOfPassing, percentage, additionalCourses
+  } = req.body;
+
+  const newEducationDetails = new EducationDetails({
+    userId: req.user.userId,
+    highestQualification,
+    university,
+    yearOfPassing,
+    percentage,
+    additionalCourses
+  });
+
+  try {
+    await newEducationDetails.save();
+    res.status(200).send('Graduation education details saved successfully');
+  } catch (err) {
+    console.error('Error saving Graduation education details:', err);
+    res.status(500).send('Server Error');
+  }
+});
+
+// Route for saving Post Graduation education details
+app.post('/savePostGraduationEducationDetails', verifyToken, async (req, res) => {
+  // Similar logic as above
+  const {
+    highestQualification, university, yearOfPassing, percentage, additionalCourses
+  } = req.body;
+
+  const newEducationDetails = new EducationDetails({
+    userId: req.user.userId,
+    highestQualification,
+    university,
+    yearOfPassing,
+    percentage,
+    additionalCourses
+  });
+
+  try {
+    await newEducationDetails.save();
+    res.status(200).send('PostGraduation education details saved successfully');
+  } catch (err) {
+    console.error('Error saving PostGraduation education details:', err);
+    res.status(500).send('Server Error');
+  }
+});
+
+// Route for saving PhD education details
+app.post('/savePhDEducationDetails', verifyToken, async (req, res) => {
+  // Similar logic as above
+  const {
+    highestQualification, university, yearOfPassing, percentage, additionalCourses
+  } = req.body;
+
+  const newEducationDetails = new EducationDetails({
+    userId: req.user.userId,
+    highestQualification,
+    university,
+    yearOfPassing,
+    percentage,
+    additionalCourses
+  });
+
+  try {
+    await newEducationDetails.save();
+    res.status(200).send('PhD details saved successfully');
+  } catch (err) {
+    console.error('Error saving PHD education details:', err);
     res.status(500).send('Server Error');
   }
 });
@@ -265,7 +367,6 @@ app.post('/saveAdministrativeExperience', verifyToken, async (req, res) => {
     res.status(200).send('Administrative experience saved successfully');
   } catch (err) {
     console.error('Error saving administrative experience:', err);
-    res.status(500).send('Server Error');
   }
 });
 
@@ -273,9 +374,9 @@ app.post('/saveAdministrativeExperience', verifyToken, async (req, res) => {
 app.get('/getDetails', verifyToken, async (req, res) => {
   try {
     const personalDetails = await PersonalDetails.findOne({ userId: req.user.userId });
-    const educationDetails = await EducationDetails.findOne({ userId: req.user.userId });
+    const educationDetails = await EducationDetails.find({ userId: req.user.userId });
 
-    if (!personalDetails && !educationDetails) {
+    if (!personalDetails && educationDetails.length === 0) {
       return res.status(404).send('Details not found');
     }
 
@@ -289,13 +390,16 @@ app.get('/getDetails', verifyToken, async (req, res) => {
 // Route to get all details of the user
 app.get('/getAllDetails', verifyToken, async (req, res) => {
   try {
-    const personalDetails = await PersonalDetails.findOne({ userId: req.user.userId });
-    const educationDetails = await EducationDetails.findOne({ userId: req.user.userId });
-    const achievements = await Achievement.findOne({ userId: req.user.userId });
-    const teachingExperience = await Experience.find({ userId: req.user.userId, experienceType: 'Teaching' });
-    const administrativeExperience = await Experience.find({ userId: req.user.userId, experienceType: 'Administrative' });
+    const userId = req.user.userId;
+    
+    const personalDetails = await PersonalDetails.findOne({ userId });
+    const educationDetails = await EducationDetails.find({ userId });  // Use find() instead of findOne()
+    const achievements = await Achievement.findOne({ userId });
+    const teachingExperience = await Experience.find({ userId, experienceType: 'Teaching' });
+    const administrativeExperience = await Experience.find({ userId, experienceType: 'Administrative' });
 
-    if (!personalDetails && !educationDetails && !achievements && teachingExperience.length === 0 && administrativeExperience.length === 0) {
+    // Check if any details were found
+    if (!personalDetails && educationDetails.length === 0 && !achievements && teachingExperience.length === 0 && administrativeExperience.length === 0) {
       return res.status(404).send('No details found');
     }
 
