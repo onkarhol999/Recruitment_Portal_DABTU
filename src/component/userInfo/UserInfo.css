@@ -1,0 +1,152 @@
+.mainDiv{
+    text-align: center;
+    padding: 3% 4%;
+    font-size: 14px;
+}
+
+.PDFheaderContainer{
+    padding: 5px;
+    margin: 10px 2px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom:  2px solid black;
+}
+
+.topcontainerPDF{
+    justify-content: center;    
+    text-align: center;
+    margin-left: 100px; 
+}
+.dbatuLogoPDF{
+    width: 120px;
+}
+
+.Title{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.Title p{
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .headerContainer{
+        display: block;
+    }
+  }
+
+
+.clgName{
+    font-size: 1.3rem;
+    font-style: bold;
+    font-weight: 1000;
+}
+
+.clgSiteTitle{
+    font-size: 1.3rem;
+    font-size: bold;
+    font-weight: 600;
+}
+
+/* Photo section */
+#photo{
+    font-size: 1.3rem;
+    justify-content: right;
+}
+
+#Photo p{
+    font-size: 1rem;
+} 
+
+.headerRow{
+    border: 2px solid black;
+    max-height: 200px;
+}
+
+.photosection{
+    max-width: 150px;
+    min-height: 100%;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+
+#letterFormat{
+    text-align: left;
+    padding: 0 15px;
+}
+
+#letterFormat p{
+    font-size: 1rem;
+}
+
+.SubjectFormat{
+    margin-left: 100px;
+}
+
+/* common */
+.headings{
+    justify-content: center;
+    background-color: rgb(173, 165, 165);
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.data-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  thead{
+    font-weight: bold;
+  }
+  th{
+    padding: 3px 15px;
+    border: 1px solid #333232;
+  }
+  tbody{
+    padding: 3px 15px;
+    border: 1px solid #333232;
+  }
+
+  td {
+    padding: 3px 15px;
+    border: 1px solid #333232;
+  }
+
+
+/* personalDetails */
+#Details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+.btncontainer{
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#declaration{
+    padding: 0px 15px;
+    text-align: left;
+}
+
+#declaration p{
+    font-size: 1rem;
+}
+
+#declaration .signatureText{
+    text-align: right;
+}
+  

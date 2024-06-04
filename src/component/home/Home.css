@@ -10,7 +10,8 @@
 .col1{
   border-radius: 10px;
   margin: 10px;
-  background-color: #dcd1fa;
+  background-color: #fff;
+  border: 2px solid #003C78;
 }
 .col2{
   border-radius: 10px;
@@ -20,7 +21,8 @@
 .col3{
   border-radius: 10px;
   margin: 10px;
-  background-color: #dcd1fa;
+  background-color: #fff;
+  border: 2px solid #003C78;
 }
 .department-link {
   text-decoration: none;
@@ -33,11 +35,7 @@
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   margin: 10px;
   transition: background-color 0.3s ease;
-}
-
-.department-card:hover {
-  background-color:  #dcd1fa;
-  border: 2px solid #000000;
+  border: 2px solid #003C78;
 }
 
 .department-card p {
@@ -45,6 +43,12 @@
   font-weight: bold;
   text-align: center;
 }
+.department-card:hover{
+  color: white;
+  background-color:  #003C78;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 1);
+}
+
 
 .custom-image {
   margin-top: 14px;
@@ -70,15 +74,15 @@
 .btn-primary{
   width: 300px;
   margin-bottom: 10px;
-  background-color:  #4d4dff;
+  background-color:  #003c78;
   border-radius: 10px;
   border: 2px solid #000000;
 }
 
 .btn-primary:hover {
   background-color:  #dcd1fa;
-color: #000000;
-border: 2px solid #000000;
+color: #003c78;
+border: 2px solid #003c78;
 }
 
 
@@ -97,19 +101,28 @@ border: 2px solid #000000;
   text-align: center;
   margin-top: 20px;
 }
+.job-list-container {
+  height: 500px; 
+  overflow: hidden;
+  position: relative;
+}
 
 .custom-list {
-  padding-left: 2px;
-  margin-top: 20px;
-  justify-items: left;
-  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
-.custom-list a{
+
+.custom-link{
+  color: #003C78;
+  font-weight: 600;
+  font-size: 1.2rem;
   text-decoration: none;
 }
-.Explore{
-  margin-top: 65px;
-}
-.col{
-  margin-top: 14px;
+
+.custom-link:hover{
+  color: #9578e6;
+  text-decoration: underline;
 }

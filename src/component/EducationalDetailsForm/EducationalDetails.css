@@ -3,7 +3,7 @@
     justify-content: center;
     margin: 20px 15px;
     border-radius: 15px;
-    background-color: #eee8fc;
+    /* background-color: #fff; */
 }
 @media screen and (min-width: 900px){
     .educationalDetailForm{
@@ -56,4 +56,8 @@
     margin: 5px 0px;
     border: 1px solid black;
     border-radius: 5px;
+}
+
+.nextBtn:hover{
+    background-color: white;
 }

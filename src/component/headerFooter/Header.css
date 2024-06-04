@@ -1,6 +1,10 @@
 /* Top section */
+header{
+    background-color: #fff;
+}
 
 .headerContainer{
+    background-color: #fff;
     margin: 10px 2px;
     display: flex;
     justify-content: center;
@@ -51,10 +55,19 @@
 /* Navbar section css */
 
 .navbar{
-    background-color: #dcd1fa;
+    background-color: #003c78;
 }
 
-.navBtn{
+.navbar .navbar-brand{
+    color: #fff;
+}
+
+.navbar .navbar-brand:hover{
+    color: #fff;
+}
+
+.navbar-nav.navBtn{
+    color: white;
     font-weight: 500;
     margin: 2px 5px;
     border-radius:5px ;
@@ -62,6 +75,7 @@
 
 .navBtn:hover{
     color: rgb(255, 0, 0);
+    text-decoration: underline;
 }
 
 .navBtn:focus{
@@ -69,6 +83,9 @@
 }
 
 .userImg{
+    background-color: white;
+    padding: 3px;
+    border-radius: 50%;
     height: 20px;
     margin-top: 9%;
     margin-right: 20px;

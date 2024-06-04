@@ -1,9 +1,9 @@
 .footerContainer{
-    background-color: #dcd1fa;
+    background-color: #003c78;
 }
 
 #footerContainer{
-    background-color: #dcd1fa;
+    background-color: #003c78;
 }
 
 .container{
@@ -13,10 +13,14 @@
 
 .footerLinks{
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 .footerLinks:hover{
     text-decoration: underline;
-    color: #5927E5;
+    color: #9b7cf0;
+}
+
+.copyRight{
+    color: #fff;
 }

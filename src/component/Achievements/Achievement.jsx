@@ -97,6 +97,9 @@ function Achievement() {
           <button type="button" className="btn addBtn" onClick={addInputField}><img src={add} alt="add"/></button>
         </div>
         <div className="formComponents">
+          <div className="projectHeading">
+            <h2>Your Projects</h2>
+          </div>
           <label className='form-label' htmlFor="summary">Summary for the project you made (up to 150 characters):</label>
           <textarea
             className='form-control'

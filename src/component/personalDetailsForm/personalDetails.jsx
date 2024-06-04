@@ -54,11 +54,11 @@ function PersonalDetails() {
                     <div className="col-md-6">
                         <div className="mb-3">
                             <label htmlFor="inputFullName" className="form-label nameLabel">Full Name</label>
-                            <div className="row personalformRow">
+                            
                                 <div className="col">
                                     <input type="text" className="form-control" id="inputFullName" name="fullName" placeholder='Full Name' value={formData.fullName} onChange={handleChange} required />
                                 </div>
-                            </div>
+                            
                         </div>
                     </div>
                     <div className="col-md-6">
@@ -130,7 +130,9 @@ function PersonalDetails() {
                         </div>
                     </div>
                 </div>
+                <div className="btnContainer" style={{textAlign: "center"}}>
                 <button type="submit" className="btn btn-primary saveBtn">Save and Next</button>
+                </div>
             </form>
         </>
     );

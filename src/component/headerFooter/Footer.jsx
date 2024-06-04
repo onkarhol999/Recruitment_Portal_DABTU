@@ -15,9 +15,8 @@ function Footer() {
           <a className="footerLinks" href="/"> RUSA </a> |
           <a className="footerLinks" href="/"> State CET Cell </a>
         </div>
-        <div className="text-center p-3">
-          © 2024 Copyright:
-          <a className="text-body footerLinks" href="/"> all copyrights reserved</a>
+        <div className="text-center p-3 copyRight">
+          © 2024 Copyright: all copyrights reserved
         </div>
       </div>
     </footer>

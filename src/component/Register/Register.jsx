@@ -16,7 +16,7 @@ const Register = () => {
       const response = await axios.post('http://localhost:5000/register', { username, password });
       setMessage(response.data);
       // Navigate to home page after successful registration
-      navigate('/home');
+      navigate('/login');
     } catch (error) {
       setMessage('Error registering user');
     }

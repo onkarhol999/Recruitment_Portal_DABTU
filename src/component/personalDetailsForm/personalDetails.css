@@ -3,8 +3,8 @@
     justify-content: center;
     margin: 20px 15px;
     border-radius: 15px;
-    border: 1px solid black;
-    background-color: #eee8fc;
+    border: 2px solid black;
+    background-color: #fff;
 }
 
 @media screen and (min-width: 900px){
@@ -15,7 +15,7 @@
 }
 
 .formComponents{
-    padding: 2% 3%;
+    padding: 5% 10%;
     text-align: left;
 }
 
@@ -37,27 +37,6 @@
     margin-top: 10px;
     width: 100px;
     height: 100px;
-}
-
-.displayImage{
-    width: 120px;
-    height: 150px;
-    justify-content: center;
-    text-align: center;
-    border: 2px solid #020202;
-    background-color:  rgba(89, 39, 229, 0.25);
-    border-radius: 15px;
-    margin-right: 15px;
-}
-
-.inputImage{
-    align-items: right;
-    margin-left: 50px;
-    width: 60%;
-}
-
-.inputImage input{
-    margin-top: 16px;
 }
 
 .personalformRow{
@@ -82,24 +61,14 @@
     display: flex; 
 }
 
-
-.radioInput{
-    display: flex; 
-}
-
-.form-check-label{
-    margin-right: 20px;
-
-}
-
-.saveBtn{
-    background-color: #5927E5;
+.btnContainer .saveBtn{
+    background-color: #003c78;
     color: white;
     font-weight: 600;
 }
 
-.saveBtn:hover{
+.btnContainer .saveBtn:hover{
     background-color: white;
-    color: #5927E5;
-    border: 2px solid #5927E5;
+    color: #003c78;
+    border: 2px solid #003c78;
 }

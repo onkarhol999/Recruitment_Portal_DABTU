@@ -31,28 +31,28 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink to={"/home"} className="nav-link navBtn">
+                <NavLink to={"/home"} className="nav-link navBtn" style={{color: "white"}}>
                            Home
               </NavLink>
               </li>
               <li className="nav-item">
-                 <NavLink to="/profile" className="nav-link navBtn"> 
+                 <NavLink to="/profile" className="nav-link navBtn" style={{color: "white"}}> 
                      Profile
                 </NavLink> 
               </li>
               <li className="nav-item">
-                <a className="nav-link navBtn" href="#">Job Application</a>
+                <a className="nav-link navBtn" style={{color: "white"}} href="#">Job Application</a>
               </li>
               <NavLink to="/userDetails">
               <li className="nav-item">
-                <a className="nav-link navBtn" href="#">My Applied Post</a>
+                <a className="nav-link navBtn" style={{color: "white"}} href="#">My Applied Post</a>
               </li>
               </NavLink>
             </ul>
             <div className="d-flex">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item userImgFlex">
-                <a className="nav-link navBtn" href="#">userName </a>
+                <a className="nav-link navBtn" style={{color: "white"}} href="#">username</a>
                 <img className='userImg' src={user} alt="" />
               </li>
             </ul>

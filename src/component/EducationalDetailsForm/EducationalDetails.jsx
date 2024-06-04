@@ -591,7 +591,10 @@ function EducationalDetails() {
                 </form>
 
             </div>
+            <div className="btnContainer" style={{textAlign: "center"}}>
+
             <NavLink to="/nextPage" className="btn btn-primary nextBtn">Next</NavLink>
+            </div>
         </>
     );
 }

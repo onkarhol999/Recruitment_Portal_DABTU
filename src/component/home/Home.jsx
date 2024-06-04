@@ -1,9 +1,65 @@
-import React from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import './Home.css'
 import { NavLink } from 'react-router-dom'
 // import PersonalDetails from '../personalDetailsForm/PersonalDetails'
 
+const jobPositions = [
+  { id: 1, title: 'Software Engineer', link: '/job-details/software-engineer' },
+  { id: 2, title: 'Data Analyst', link: '/job-details/data-analyst' },
+  { id: 3, title: 'Teaching Faculty', link: '/job-details/teacher' },
+  { id: 4, title: 'Teaching Faculty', link: '/job-details/teacher' },
+  { id: 5, title: 'Teaching Faculty', link: '/job-details/teacher' },
+  { id: 6, title: 'Teaching Faculty', link: '/job-details/teacher' },
+  { id: 7, title: 'Teaching Faculty', link: '/job-details/teacher' },
+  { id: 8, title: 'Software Engineer', link: '/job-details/software-engineer' },
+  { id: 9, title: 'Data Analyst', link: '/job-details/data-analyst' },
+  { id: 10, title: 'Teaching Faculty', link: '/job-details/teacher' },
+  { id: 11, title: 'Teaching Faculty', link: '/job-details/teacher' },
+  { id: 12, title: 'Teaching Faculty', link: '/job-details/teacher' },
+  { id: 13, title: 'Teaching Faculty', link: '/job-details/teacher' },
+  { id: 14, title: 'Teaching Faculty', link: '/job-details/teacher' },
+];
+
 function Home() {
+
+  const listRef = useRef(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    const list = listRef.current;
+    let animation;
+
+    const startScrolling = () => {
+      animation = list.animate(
+        [{ transform: 'translateY(0)' }, { transform: `translateY(-${list.scrollHeight}px)` }],
+        {
+          duration: jobPositions.length * 2000, // Adjust based on the number of items and speed
+          iterations: Infinity,
+          easing: 'linear',
+        }
+      );
+    };
+
+    const stopScrolling = () => {
+      if (animation) animation.pause();
+    };
+
+    const resumeScrolling = () => {
+      if (animation) animation.play();
+    };
+
+    list.addEventListener('mouseenter', stopScrolling);
+    list.addEventListener('mouseleave', resumeScrolling);
+
+    startScrolling();
+
+    return () => {
+      if (animation) animation.cancel();
+      list.removeEventListener('mouseenter', stopScrolling);
+      list.removeEventListener('mouseleave', resumeScrolling);
+    };
+  }, []);
+
   return (
     <>     
     {/* <PersonalDetails/> */}
@@ -14,67 +70,19 @@ function Home() {
       <div className="text-center max-w-96 mt-4 ml-4">
         <section className="custom-section">
           <div className="custom-bg w-full">
-            <h1 className="custom-title">Current Job Positions</h1>
+            <h1 className="custom-title">Current Job Positions News</h1>
           </div>
-          <ul className="custom-list">
-            <li className="mb-4">
-              <a
-                href="/job-details/software-engineer"
-                className="custom-link"
-              >
-                Software Engineer
-              </a>
-            </li>
-            <li className="mb-4">
-              <a
-                href="/job-details/data-analyst"
-                className="custom-link"
-              >
-                Data Analyst
-              </a>
-            </li>
-            <li className="mb-4">
-              <a
-                href="/job-details/teacher"
-                className="custom-link"
-              >
-                Teaching Faculty
-              </a>
-            </li>
-            <li className="mb-4">
-              <a
-                href="/job-details/teacher"
-                className="custom-link"
-              >
-                Teaching Faculty
-              </a>
-            </li>
-            <li className="mb-4">
-              <a
-                href="/job-details/teacher"
-                className="custom-link"
-              >
-                Teaching Faculty
-              </a>
-            </li>
-            <li className="mb-4">
-              <a
-                href="/job-details/teacher"
-                className="custom-link"
-              >
-                Teaching Faculty
-              </a>
-            </li>
-            <li className="mb-4">
-              <a
-                href="/job-details/teacher"
-                className="custom-link"
-              >
-                Teaching Faculty
-              </a>
-            </li>
-            {/* Add more job positions as needed */}
-          </ul>
+          <div className="job-list-container">
+            <ul className="custom-list" ref={listRef}>
+              {jobPositions.concat(jobPositions).map((job, index) => (
+                <li key={index} className="mb-4">
+                  <a href={job.link} className="custom-link">
+                    {job.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
       </div>
     </div>
