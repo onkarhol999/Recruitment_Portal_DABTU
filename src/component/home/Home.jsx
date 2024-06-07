@@ -4,20 +4,20 @@ import { NavLink } from 'react-router-dom'
 // import PersonalDetails from '../personalDetailsForm/PersonalDetails'
 
 const jobPositions = [
-  { id: 1, title: 'Software Engineer', link: '/job-details/software-engineer' },
-  { id: 2, title: 'Data Analyst', link: '/job-details/data-analyst' },
-  { id: 3, title: 'Teaching Faculty', link: '/job-details/teacher' },
-  { id: 4, title: 'Teaching Faculty', link: '/job-details/teacher' },
-  { id: 5, title: 'Teaching Faculty', link: '/job-details/teacher' },
-  { id: 6, title: 'Teaching Faculty', link: '/job-details/teacher' },
-  { id: 7, title: 'Teaching Faculty', link: '/job-details/teacher' },
-  { id: 8, title: 'Software Engineer', link: '/job-details/software-engineer' },
-  { id: 9, title: 'Data Analyst', link: '/job-details/data-analyst' },
-  { id: 10, title: 'Teaching Faculty', link: '/job-details/teacher' },
-  { id: 11, title: 'Teaching Faculty', link: '/job-details/teacher' },
-  { id: 12, title: 'Teaching Faculty', link: '/job-details/teacher' },
-  { id: 13, title: 'Teaching Faculty', link: '/job-details/teacher' },
-  { id: 14, title: 'Teaching Faculty', link: '/job-details/teacher' },
+  { id: 1, title: 'Software Engineer', link: '#' },
+  { id: 2, title: 'Data Analyst', link: '#' },
+  { id: 3, title: 'Teaching Faculty', link: '#' },
+  { id: 4, title: 'Teaching Faculty', link: '#' },
+  { id: 5, title: 'Teaching Faculty', link: '#' },
+  { id: 6, title: 'Teaching Faculty', link: '#' },
+  { id: 7, title: 'Teaching Faculty', link: '#' },
+  { id: 8, title: 'Software Engineer', link: '#' },
+  { id: 9, title: 'Data Analyst', link: '#' },
+  { id: 10, title: 'Teaching Faculty', link: '#' },
+  { id: 11, title: 'Teaching Faculty', link: '#' },
+  { id: 12, title: 'Teaching Faculty', link: '#' },
+  { id: 13, title: 'Teaching Faculty', link: '#' },
+  { id: 14, title: 'Teaching Faculty', link: '#' },
 ];
 
 function Home() {
@@ -99,7 +99,7 @@ function Home() {
             />
           </div>
           <div className="text-center mb-4 ">
-            <p className="custom-title WelCome">Welcome to Our College!</p>
+            <p className="custom-title WelCome">Welcome to DBATU Recruitment Portal!</p>
             <p className="custom-text">
               <b className='custom-subtitle'>Vision </b> <br />
               "The University is committed to become a leading 'Center of Excellence' in the field of Engineering, Technology and Science as a seat of learning with a national character and international outlook." <br />
@@ -126,34 +126,39 @@ function Home() {
         {/* Department Links */}
         <div className="row justify-content-center">
           <div className="col">
-            <a href="/departments/computer" className="department-link">
+            <a href="#" className="department-link">
               <div className="department-card">
                 <p>Computer Engineering</p>
               </div>
             </a>
-            <a href="/departments/computer" className="department-link">
+            <a href="#" className="department-link">
               <div className="department-card">
-                <p>Computer Engineering</p>
+                <p>IT Engineering</p>
               </div>
             </a>
-            <a href="/departments/computer" className="department-link">
+            <a href="#" className="department-link">
               <div className="department-card">
-                <p>Computer Engineering</p>
+                <p>Electrical Engineering</p>
               </div>
             </a>
-            <a href="/departments/computer" className="department-link">
+            <a href="#" className="department-link">
               <div className="department-card">
-                <p>Computer Engineering</p>
+                <p>Chemical Engineering</p>
               </div>
             </a>
-            <a href="/departments/computer" className="department-link">
+            <a href="#" className="department-link">
               <div className="department-card">
-                <p>Computer Engineering</p>
+                <p>Mechanical Engineering</p>
               </div>
             </a>
-            <a href="/departments/computer" className="department-link">
+            <a href="#" className="department-link">
               <div className="department-card">
-                <p>Computer Engineering</p>
+                <p>PetroChemical Engineering</p>
+              </div>
+            </a>
+            <a href="#" className="department-link">
+              <div className="department-card">
+                <p>EXTC Engineering</p>
               </div>
             </a>
           </div>

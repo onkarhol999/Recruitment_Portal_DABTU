@@ -109,7 +109,7 @@ const UserDetails = () => {
         <div className="headings">
           <h2>Personal Details</h2>
         </div>
-        <table className='data-table'>
+        <table className='horizontal-table'>
           <tr>
             <th>Full Name: </th>
             <td>{userData.personalDetails?.fullName || 'N/A'}</td>
@@ -174,7 +174,7 @@ const UserDetails = () => {
                 <th>University</th>
                 <th>Year of Passing</th>
                 <th>Percentage</th>
-                <th>Additional Courses</th>
+                <th>Additional Courses / Specialty</th>
               </tr>
             </thead>
             <tbody>
@@ -207,7 +207,7 @@ const UserDetails = () => {
                 <th>Position</th>
                 <th>From</th>
                 <th>To</th>
-                <th>NAture of Appointment</th>
+                <th>Nature of Appointment</th>
                 <th>Total Experience</th>
               </tr>
             </thead>
@@ -268,7 +268,7 @@ const UserDetails = () => {
 
         <h2>Achievements</h2>
         </div>
-        <table className="data-table">
+        <table className="horizontal-table">
           <tr>
             <th>Research Papers:</th>
             <td>{userData.achievements?.researchPapers?.length > 0 ? (

@@ -1,7 +1,14 @@
+.mainBody{
+  padding: 9% 20%;
+}
+
 .register-container {
-  width: 300px;
+  width: 350px;
+  min-height: 400px;
   margin: auto;
   padding: 20px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #ccc;
   border-radius: 10px;
   background-color: #f9f9f9;
@@ -29,22 +36,33 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  width: 100%;
 }
 
 .register-container form button {
   padding: 10px;
-  background-color: #28a745;
+  background-color: #003c78;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .register-container form button:hover {
-  background-color: #218838;
+  background-color: #012b55;
 }
 
 .register-container p {
   text-align: center;
   color: red;
+}
+
+.register-container p .LoginLink{
+  text-decoration: none;
+  color: #003c78;
+}
+
+.register-container p .LoginLink:hover{
+  text-decoration: underline;
 }

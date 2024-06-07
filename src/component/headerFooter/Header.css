@@ -71,6 +71,7 @@ header{
     font-weight: 500;
     margin: 2px 5px;
     border-radius:5px ;
+    text-decoration: none;
 }
 
 .navBtn:hover{

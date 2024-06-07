@@ -168,7 +168,7 @@ app.post('/savePersonalDetails', verifyToken, async (req, res) => {
     await newPersonalDetails.save();
     res.status(200).send('Personal details saved successfully');
   } catch (err) {
-    console.error('Error saving personal details:', err);
+    console.error('Please Login:');
     res.status(500).send('Server Error');
   }
 });
@@ -194,8 +194,8 @@ app.post('/saveSSCEducationDetails', verifyToken, async (req, res) => {
     await newEducationDetails.save();
     res.status(200).send('SSC education details saved successfully');
   } catch (err) {
-    console.error('Error saving SSC education details:', err);
-    res.status(500).send('Server Error');
+    console.error('Please Login:');
+    res.status(500).send('Please Login:');
   }
 });
 

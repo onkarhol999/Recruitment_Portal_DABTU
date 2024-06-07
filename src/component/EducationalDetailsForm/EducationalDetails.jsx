@@ -362,6 +362,19 @@ function EducationalDetails() {
                             </div>
                             <div className="col-md-6">
                                 <div className="mb-3">
+                                    <label htmlFor="additionalCourses" className="form-label">Branch/Course</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="additionalCourses"
+                                        value={graduationDetails.additionalCourses}
+                                        onChange={(e) => handleInputChange(e, setGraduationDetails)}
+                                        placeholder='Enter any additional courses'
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="mb-3">
                                     <label htmlFor="passingYear" className="form-label">Month and year of passing</label>
                                     <div className="passingYearMonthDiv">
                                         <select id="month" className='form-select passingYNM' value={selectedMonth} onChange={handleMonthChange} name="month">
@@ -399,19 +412,7 @@ function EducationalDetails() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-md-6">
-                                <div className="mb-3">
-                                    <label htmlFor="additionalCourses" className="form-label">Additional Courses</label>
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        id="additionalCourses"
-                                        value={graduationDetails.additionalCourses}
-                                        onChange={(e) => handleInputChange(e, setGraduationDetails)}
-                                        placeholder='Enter any additional courses'
-                                    />
-                                </div>
-                            </div>
+                            
                         </div>
                         <button type="submit" className="btn btn-primary saveBtn">Save</button>
                     </div>
@@ -443,6 +444,19 @@ function EducationalDetails() {
                                         value={postgraduationDetails.university}
                                         onChange={(e) => handleInputChange(e, setPostgraduationDetails)}
                                         placeholder='Enter Name of Your University'
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="mb-3">
+                                    <label htmlFor="additionalCourses" className="form-label">Course / Specialty</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="additionalCourses"
+                                        value={postgraduationDetails.additionalCourses}
+                                        onChange={(e) => handleInputChange(e, setPostgraduationDetails)}
+                                        placeholder='Enter any additional courses'
                                     />
                                 </div>
                             </div>
@@ -485,19 +499,7 @@ function EducationalDetails() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-md-6">
-                                <div className="mb-3">
-                                    <label htmlFor="additionalCourses" className="form-label">Additional Courses</label>
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        id="additionalCourses"
-                                        value={postgraduationDetails.additionalCourses}
-                                        onChange={(e) => handleInputChange(e, setPostgraduationDetails)}
-                                        placeholder='Enter any additional courses'
-                                    />
-                                </div>
-                            </div>
+                            
                         </div>
                         <button type="submit" className="btn btn-primary saveBtn">Save</button>
                     </div>
@@ -530,6 +532,19 @@ function EducationalDetails() {
                                         value={phdDetails.university}
                                         onChange={(e) => handleInputChange(e, setphdDetails)}
                                         placeholder='Enter Name of Your University'
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="mb-3">
+                                    <label htmlFor="additionalCourses" className="form-label">Specialty / Course</label>
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        id="additionalCourses"
+                                        value={phdDetails.additionalCourses}
+                                        onChange={(e) => handleInputChange(e, setphdDetails)}
+                                        placeholder='Enter any additional courses'
                                     />
                                 </div>
                             </div>
@@ -572,19 +587,7 @@ function EducationalDetails() {
                                     />
                                 </div>
                             </div>
-                            <div className="col-md-6">
-                                <div className="mb-3">
-                                    <label htmlFor="additionalCourses" className="form-label">Additional Courses</label>
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        id="additionalCourses"
-                                        value={phdDetails.additionalCourses}
-                                        onChange={(e) => handleInputChange(e, setphdDetails)}
-                                        placeholder='Enter any additional courses'
-                                    />
-                                </div>
-                            </div>
+                            
                         </div>
                         <button type="submit" className="btn btn-primary saveBtn">Save</button>
                     </div>

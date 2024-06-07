@@ -97,9 +97,33 @@
     width: 100%;
 }
 
+.horizontal-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 20px;
+}
+
+.horizontal-table th, .horizontal-table td {
+    border: 1px solid #ddd;
+    padding: 8px 2px;
+}
+
+.horizontal-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    width: 250px;  /* Set a fixed width for th */
+    border: 1px solid #333232;
+}
+
+.horizontal-table td {
+    text-align: left;
+    padding-left: 15px; /* This brings td content closer to the th */
+    border: 1px solid #333232;
+}
+
 .data-table {
     width: 80%;
-    margin: 20px auto;
+    margin: 20px 20px;
     border-collapse: collapse;
     font-size: 1rem;
     text-align: left;

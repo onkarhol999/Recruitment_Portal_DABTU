@@ -26,21 +26,30 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Username</label>
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
-        </div>
-        <div>
-          <label>Password</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </div>
-        <button type="submit">Login</button>
-    <p>You don't have Account ? <Link to="/">Sign up</Link> </p>
-      </form>
-      {message && <p>{message}</p>}
+    <div className="mainBody">
+      <div className="login-container">
+        {message && <p>
+          <div className="alert alert-danger d-flex align-items-center" role="alert">
+            <div>
+              {message}
+            </div>
+          </div>
+        </p>}
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label>Username</label>
+            <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+          </div>
+          <div>
+            <label>Password</label>
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          </div>
+          <button type="submit">Login</button>
+          <p>You don't have Account ? <Link className='SignUpLink' to="/">Sign up</Link> </p>
+        </form>
+        
+      </div>
     </div>
   );
 };
