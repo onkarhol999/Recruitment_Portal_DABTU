@@ -126,39 +126,44 @@ function Home() {
         {/* Department Links */}
         <div className="row justify-content-center">
           <div className="col">
-            <a href="#" className="department-link">
+            <a href="https://cse.dbatu.ac.in/" className="department-link">
               <div className="department-card">
                 <p>Computer Engineering</p>
               </div>
             </a>
-            <a href="#" className="department-link">
+            <a href="https://dbatu.ac.in/department-of-information-technology-2/" className="department-link">
               <div className="department-card">
                 <p>IT Engineering</p>
               </div>
             </a>
-            <a href="#" className="department-link">
+            <a href="https://dbatu.ac.in/department-of-electrical-engineering-new/" className="department-link">
               <div className="department-card">
                 <p>Electrical Engineering</p>
               </div>
             </a>
-            <a href="#" className="department-link">
+            <a href="https://dbatu.ac.in/department-of-chemical-engineering/" className="department-link">
               <div className="department-card">
                 <p>Chemical Engineering</p>
               </div>
             </a>
-            <a href="#" className="department-link">
+            <a href="https://dbatu.ac.in/mechengg/" className="department-link">
               <div className="department-card">
                 <p>Mechanical Engineering</p>
               </div>
             </a>
-            <a href="#" className="department-link">
+            <a href="https://dbatu.ac.in/petrochemical-engineering/" className="department-link">
               <div className="department-card">
                 <p>PetroChemical Engineering</p>
               </div>
             </a>
-            <a href="#" className="department-link">
+            <a href="https://dbatu.ac.in/department-of-electronics-telecommunications-engineering/" className="department-link">
               <div className="department-card">
                 <p>EXTC Engineering</p>
+              </div>
+            </a>
+            <a href="https://dbatu.ac.in/civil-engineering-3/" className="department-link">
+              <div className="department-card">
+                <p>Civil Engineering</p>
               </div>
             </a>
           </div>
